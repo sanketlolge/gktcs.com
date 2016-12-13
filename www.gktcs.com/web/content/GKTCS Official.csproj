@@ -1,0 +1,956 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC20B2E7-B5AB-48AA-92CF-753CB5CE26E2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GKTCS_Official</RootNamespace>
+    <AssemblyName>GKTCS Official</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="BatchShedules.aspx" />
+    <Content Include="Career.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="CoporateEnquiry.aspx" />
+    <Content Include="Achievement.aspx" />
+    <Content Include="Admin_form.aspx" />
+    <Content Include="Coursescontent%40gktcs.aspx" />
+    <Content Include="CorporateTraining.aspx" />
+    <Content Include="Courses%40gktcs.aspx" />
+    <Content Include="Courses\Android.aspx" />
+    <Content Include="Courses\CCNA.aspx" />
+    <Content Include="Courses\C++.aspx" />
+    <Content Include="Courses\C Sharp.aspx" />
+    <Content Include="Courses\course img\android1.png" />
+    <Content Include="Courses\course img\basic_php.png" />
+    <Content Include="Courses\course img\CCNA.png" />
+    <Content Include="Courses\course img\c_sharp1.png" />
+    <Content Include="Courses\course img\c_sharp2.png" />
+    <Content Include="Courses\course img\ITILV31.png" />
+    <Content Include="Courses\course img\ITILV32.png" />
+    <Content Include="Courses\course img\ITILV33.png" />
+    <Content Include="Courses\course img\ITILV34.png" />
+    <Content Include="Courses\course img\RHCEL1.png" />
+    <Content Include="Courses\course img\RHCEL2.png" />
+    <Content Include="Courses\course img\RHEL1.png" />
+    <Content Include="Courses\course img\RHEL2.png" />
+    <Content Include="Courses\course img\RHEL3.png" />
+    <Content Include="Courses\course img\RHEL33.png" />
+    <Content Include="Courses\course img\Rhel4.png" />
+    <Content Include="Courses\course img\RHEL44.png" />
+    <Content Include="Courses\course img\RHEL55.png" />
+    <Content Include="Courses\course img\Spring.png" />
+    <Content Include="Courses\course img\Struts.png" />
+    <Content Include="Courses\course img\unix1.png" />
+    <Content Include="Courses\course img\unix2.png" />
+    <Content Include="Courses\PHP.aspx" />
+    <Content Include="Courses\course img\advance_php1.png" />
+    <Content Include="Courses\course img\Ajax.png" />
+    <Content Include="Courses\course img\basicdotnet1.png" />
+    <Content Include="Courses\course img\basicdotnet2.png" />
+    <Content Include="Courses\course img\c.png" />
+    <Content Include="Courses\course img\CA site.png" />
+    <Content Include="Courses\course img\cpp.png" />
+    <Content Include="Courses\course img\cs site2.png" />
+    <Content Include="Courses\course img\css1.png" />
+    <Content Include="Courses\course img\css2.png" />
+    <Content Include="Courses\course img\css4.png" />
+    <Content Include="Courses\course img\css41.png" />
+    <Content Include="Courses\course img\django.png" />
+    <Content Include="Courses\course img\hibernate.png" />
+    <Content Include="Courses\course img\html.png" />
+    <Content Include="Courses\course img\html51.png" />
+    <Content Include="Courses\course img\html52.png" />
+    <Content Include="Courses\course img\html55.png" />
+    <Content Include="Courses\course img\j2ee1.png" />
+    <Content Include="Courses\course img\j2ee11.png" />
+    <Content Include="Courses\course img\j2ee2.png" />
+    <Content Include="Courses\course img\j2ee3.png" />
+    <Content Include="Courses\course img\java1.png" />
+    <Content Include="Courses\course img\java2.png" />
+    <Content Include="Courses\course img\jquery1.png" />
+    <Content Include="Courses\course img\linux.png" />
+    <Content Include="Courses\course img\linux2.png" />
+    <Content Include="Courses\course img\php_advance2.png" />
+    <Content Include="Courses\course img\plsql1.png" />
+    <Content Include="Courses\course img\plsql2.png" />
+    <Content Include="Courses\course img\python1.png" />
+    <Content Include="Courses\course img\python2.png" />
+    <Content Include="Courses\course img\sql1.png" />
+    <Content Include="Courses\course img\sql2.png" />
+    <Content Include="Courses\ITIL V3.aspx" />
+    <Content Include="Courses\CA Siteminder.aspx" />
+    <Content Include="Courses\PMP.aspx" />
+    <Content Include="Courses\RHEL.aspx" />
+    <Content Include="Courses\MCSE.aspx" />
+    <Content Include="Courses\CA Autosys.aspx" />
+    <Content Include="Courses\Spring.aspx" />
+    <Content Include="Courses\Struts.aspx" />
+    <Content Include="Courses\PhoneGap.aspx" />
+    <Content Include="Courses\Jquery Mobile.aspx" />
+    <Content Include="Courses\QTP.aspx" />
+    <Content Include="Courses\HTML.aspx" />
+    <Content Include="Courses\MySql.aspx" />
+    <Content Include="Courses\Sqlite.aspx" />
+    <Content Include="Courses\Perl.aspx" />
+    <Content Include="Courses\Unix.aspx" />
+    <Content Include="Courses\Linux.aspx" />
+    <Content Include="Courses\CSS.aspx" />
+    <Content Include="Courses\Django.aspx" />
+    <Content Include="Courses\Jython.aspx" />
+    <Content Include="Courses\CSS4.aspx" />
+    <Content Include="Courses\Ajax.aspx" />
+    <Content Include="Courses\JavaScript.aspx" />
+    <Content Include="Courses\C.aspx" />
+    <Content Include="Courses\course img\advance  dotnet2.png" />
+    <Content Include="Courses\course img\Advance android.png" />
+    <Content Include="Courses\course img\Advance android1.png" />
+    <Content Include="Courses\course img\Android2.png" />
+    <Content Include="Courses\course img\basic dotnet.png" />
+    <Content Include="Courses\course img\dotnet advance1.png" />
+    <Content Include="Courses\DotNet.aspx" />
+    <Content Include="Courses\Hibernate.aspx" />
+    <Content Include="Courses\Html5.aspx" />
+    <Content Include="Courses\J2EE.aspx" />
+    <Content Include="Courses\Java.aspx" />
+    <Content Include="Courses\Jquery.aspx" />
+    <Content Include="Courses\plsql.aspx" />
+    <Content Include="Courses\Python.aspx" />
+    <Content Include="Courses\SQL.aspx" />
+    <Content Include="CurrentOpenings.aspx" />
+    <Content Include="images\1207314009389168677emergency telephone blue.svg.med.png" />
+    <Content Include="images\achievements.jpg" />
+    <Content Include="images\banner-careers.jpg" />
+    <Content Include="images\BRAND_chess_piece.jpg" />
+    <Content Include="images\carees_life_at copy.png" />
+    <Content Include="images\carees_life_atCropcopy.png" />
+    <Content Include="images\checklist.jpg" />
+    <Content Include="images\Contactus-img.jpg" />
+    <Content Include="images\contactus.jpg" />
+    <Content Include="images\current-openings.png" />
+    <Content Include="images\description_ilo.jpg" />
+    <Content Include="images\Director.jpg" />
+    <Content Include="images\enquiry.jpg" />
+    <Content Include="images\enquiry2.jpg" />
+    <Content Include="images\images %281%29.jpg" />
+    <Content Include="images\ima_placement.jpg" />
+    <Content Include="images\img_1.jpg" />
+    <Content Include="images\img_2.jpg" />
+    <Content Include="images\img_3.jpg" />
+    <Content Include="images\Jobs2.jpg" />
+    <Content Include="images\Linkedin_logo.jpg" />
+    <Content Include="images\map.jpg" />
+    <Content Include="images\Milestones.jpg" />
+    <Content Include="images\our-vision.jpg" />
+    <Content Include="images\our_vision %281%29.jpg" />
+    <Content Include="images\Placed Students\Neha.jpg" />
+    <Content Include="images\Placed Students\p1.jpg" />
+    <Content Include="images\Placed Students\placement.jpg" />
+    <Content Include="images\Placed Students\rasika1.jpg" />
+    <Content Include="images\Placed Students\sohail khan.jpg" />
+    <Content Include="images\Placed Students\sounav das.jpg" />
+    <Content Include="images\placement clients\accenture.jpg" />
+    <Content Include="images\placement clients\aricent.jpg" />
+    <Content Include="images\placement clients\atos origin.jpg" />
+    <Content Include="images\placement clients\bmc software.jpg" />
+    <Content Include="images\placement clients\capgemini.jpg" />
+    <Content Include="images\placement clients\hcl.jpg" />
+    <Content Include="images\placement clients\helwett packard.jpg" />
+    <Content Include="images\placement clients\hexaware.jpg" />
+    <Content Include="images\placement clients\inetsoft.jpg" />
+    <Content Include="images\placement clients\mphasis.jpg" />
+    <Content Include="images\placement clients\ness technologies.jpg" />
+    <Content Include="images\placement clients\oracle.jpg" />
+    <Content Include="images\placement clients\our clients.jpg" />
+    <Content Include="images\placement clients\patni.jpg" />
+    <Content Include="images\placement clients\renuka.jpg" />
+    <Content Include="images\placement clients\rolta.jpg" />
+    <Content Include="images\placement clients\samsung.jpg" />
+    <Content Include="images\placement clients\siemens.jpg" />
+    <Content Include="images\placement clients\symantec.jpg" />
+    <Content Include="images\placement clients\symphony.jpg" />
+    <Content Include="images\placement clients\techmahindra.jpg" />
+    <Content Include="images\placement clients\tieto.jpg" />
+    <Content Include="images\placement clients\upside learning.jpg" />
+    <Content Include="images\placement clients\verizon.jpg" />
+    <Content Include="images\placement clients\wipro.jpg" />
+    <Content Include="images\placement.gif" />
+    <Content Include="images\placement2.jpg" />
+    <Content Include="images\plsql-mini.png" />
+    <Content Include="images\projects %281%29.jpg" />
+    <Content Include="images\Surendra Great Leader.jpg" />
+    <Content Include="images\tracking-goals.jpg" />
+    <Content Include="images\values.png" />
+    <Content Include="images\values_492x277px.png" />
+    <Content Include="images\vision.jpg" />
+    <Content Include="InstitutionalTraining.aspx" />
+    <Content Include="jquery\accordian-src.js" />
+    <Content Include="jquery\accordian.pack.js" />
+    <Content Include="jquery\Basic.html" />
+    <Content Include="jquery\by dezinerfolio.com.txt" />
+    <Content Include="jquery\style.css" />
+    <Content Include="least\css\least.min.css" />
+    <Content Include="least\css\prism.min.css" />
+    <Content Include="least\css\style.min.css" />
+    <Content Include="least\gallery.html" />
+    <Content Include="least\img\effects\close.png" />
+    <Content Include="least\img\effects\white.gif" />
+    <Content Include="least\img\full\full_1.jpg" />
+    <Content Include="least\img\full\full_10.JPG" />
+    <Content Include="least\img\full\full_11.jpg" />
+    <Content Include="least\img\full\full_12.jpg" />
+    <Content Include="least\img\full\full_2.jpg" />
+    <Content Include="least\img\full\full_3.jpg" />
+    <Content Include="least\img\full\full_4.jpg" />
+    <Content Include="least\img\full\full_5.jpg" />
+    <Content Include="least\img\full\full_6.jpg" />
+    <Content Include="least\img\full\full_7.jpg" />
+    <Content Include="least\img\full\full_8.jpg" />
+    <Content Include="least\img\full\full_9.JPG" />
+    <Content Include="least\img\thumb\Thumb_1.jpg" />
+    <Content Include="least\img\thumb\Thumb_10.jpg" />
+    <Content Include="least\img\thumb\Thumb_11.jpg" />
+    <Content Include="least\img\thumb\Thumb_12.jpg" />
+    <Content Include="least\img\thumb\Thumb_2.jpg" />
+    <Content Include="least\img\thumb\Thumb_3.jpg" />
+    <Content Include="least\img\thumb\Thumb_4.jpg" />
+    <Content Include="least\img\thumb\Thumb_5.jpg" />
+    <Content Include="least\img\thumb\Thumb_6.jpg" />
+    <Content Include="least\img\thumb\Thumb_7.jpg" />
+    <Content Include="least\img\thumb\Thumb_8.jpg" />
+    <Content Include="least\img\thumb\Thumb_9.jpg" />
+    <Content Include="least\js\jquery.lazyload.js" />
+    <Content Include="least\js\jquery.min.js" />
+    <Content Include="least\js\least.min.js" />
+    <Content Include="least\js\prism.js" />
+    <Content Include="least\readme.txt" />
+    <Content Include="ManagementDesk.aspx" />
+    <Content Include="menuimages\growth1.jpg" />
+    <Content Include="OurMilestones.aspx" />
+    <Content Include="OurValues.aspx" />
+    <Content Include="Placements.aspx" />
+    <Content Include="Projects.aspx" />
+    <Content Include="RetailTraining.aspx" />
+    <Content Include="Scripts\jquery-1.2.6.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\menu.js" />
+    <Content Include="Online Training.aspx" />
+    <Content Include="StudentEnquiry.aspx" />
+    <Content Include="style.css" />
+    <Content Include="Styles\footerstyle.css" />
+    <Content Include="Styles\ie6.css" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Styles\sidecon.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="TrainerRegistration.aspx" />
+    <Content Include="VisionMission.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WhoWeAre.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="images\.net.png" />
+    <Content Include="images\110_3d_banner_ribbon32small.png" />
+    <Content Include="images\arrow.gif" />
+    <Content Include="images\arrow1.gif" />
+    <Content Include="images\border-bot.gif" />
+    <Content Include="images\border-top.gif" />
+    <Content Include="images\border-top1.gif" />
+    <Content Include="images\box1-bot.jpg" />
+    <Content Include="images\box1-bot1.jpg" />
+    <Content Include="images\button-left.png" />
+    <Content Include="images\button-left1.png" />
+    <Content Include="images\button-right.png" />
+    <Content Include="images\button-right1.png" />
+    <Content Include="images\button-tail.gif" />
+    <Content Include="images\button-tail1.png" />
+    <Content Include="images\Clients\aricent.png" />
+    <Content Include="images\Clients\silicon_valley_company_logos copy.png" />
+    <Content Include="images\Clients\symantic.png" />
+    <Content Include="images\Clients\upsidelearning.png" />
+    <Content Include="images\Clients\webex.png" />
+    <Content Include="images\Coursessmall.png" />
+    <Content Include="images\divider.gif" />
+    <Content Include="images\flashes\banner1.swf" />
+    <Content Include="images\footer-nav-left.gif" />
+    <Content Include="images\footer-nav-right.gif" />
+    <Content Include="images\footer-nav-tail.gif" />
+    <Content Include="images\footer-tail.gif" />
+    <Content Include="images\footerimages\awesome_css3_footer.png" />
+    <Content Include="images\footerimages\bg_body.png" />
+    <Content Include="images\footerimages\digg.png" />
+    <Content Include="images\footerimages\facebook.png" />
+    <Content Include="images\footerimages\flickr.png" />
+    <Content Include="images\footerimages\home.png" />
+    <Content Include="images\footerimages\home_hover.png" />
+    <Content Include="images\footerimages\twitter.png" />
+    <Content Include="images\gktcs.png" />
+    <Content Include="images\header-tail.gif" />
+    <Content Include="images\icon1-act.gif" />
+    <Content Include="images\icon1.gif" />
+    <Content Include="images\icon2-act.gif" />
+    <Content Include="images\icon2.gif" />
+    <Content Include="images\icon3-act.gif" />
+    <Content Include="images\icon3.gif" />
+    <Content Include="images\item-pointer-mover.gif" />
+    <Content Include="images\item-pointer.gif" />
+    <Content Include="images\lava.gif" />
+    <Content Include="images\lava.png" />
+    <Content Include="images\left-bot-corner.gif" />
+    <Content Include="images\left-bot-corner1.gif" />
+    <Content Include="images\left-top-corner.gif" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\main-bg.png" />
+    <Content Include="images\main-delimiter.png" />
+    <Content Include="images\nav-act.png" />
+    <Content Include="images\nav-arrow.gif" />
+    <Content Include="images\nav-left.gif" />
+    <Content Include="images\nav-right.gif" />
+    <Content Include="images\nav-tail.gif" />
+    <Content Include="images\Placed Students\Ahilan Shankar.jpg" />
+    <Content Include="images\Placed Students\Apurva   Bhat.jpg" />
+    <Content Include="images\Placed Students\Ashish Soni.jpg" />
+    <Content Include="images\Placed Students\capegemini.png" />
+    <Content Include="images\Placed Students\Gaurav Kotarwar.jpg" />
+    <Content Include="images\Placed Students\leoinfotech.png" />
+    <Content Include="images\Placed Students\Nikhil Mulik.jpg" />
+    <Content Include="images\Placed Students\Prajakta Sakale.jpg" />
+    <Content Include="images\Placed Students\searce.png" />
+    <Content Include="images\Placed Students\ShashankVerma.jpg" />
+    <Content Include="images\Placed Students\Sohail Shaikh.jpg" />
+    <Content Include="images\Placed Students\upsidelearning.png" />
+    <Content Include="images\Placed Students\Vaishnavi Pande.jpg" />
+    <Content Include="images\right-bot-corner.gif" />
+    <Content Include="images\right-bot-corner1.gif" />
+    <Content Include="images\right-top-corner.gif" />
+    <Content Include="images\sidenav_.gif" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\tail-top.gif" />
+    <Content Include="jquery.js" />
+    <Content Include="menu.js" />
+    <Content Include="menuimages\item-pointer-mover.gif" />
+    <Content Include="menuimages\item-pointer.gif" />
+    <Content Include="menuimages\lava.gif" />
+    <Content Include="menuimages\lava.png" />
+    <Content Include="menuimages\main-bg.png" />
+    <Content Include="menuimages\main-delimiter.png" />
+    <Content Include="jquery-1.2.6.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WorkShops.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BatchShedules.aspx.cs">
+      <DependentUpon>BatchShedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BatchShedules.aspx.designer.cs">
+      <DependentUpon>BatchShedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Career.aspx.cs">
+      <DependentUpon>Career.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Career.aspx.designer.cs">
+      <DependentUpon>Career.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoporateEnquiry.aspx.cs">
+      <DependentUpon>CoporateEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoporateEnquiry.aspx.designer.cs">
+      <DependentUpon>CoporateEnquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Achievement.aspx.cs">
+      <DependentUpon>Achievement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Achievement.aspx.designer.cs">
+      <DependentUpon>Achievement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_form.aspx.cs">
+      <DependentUpon>Admin_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_form.aspx.designer.cs">
+      <DependentUpon>Admin_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coursescontent%40gktcs.aspx.cs">
+      <DependentUpon>Coursescontent%40gktcs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coursescontent%40gktcs.aspx.designer.cs">
+      <DependentUpon>Coursescontent%40gktcs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CorporateTraining.aspx.cs">
+      <DependentUpon>CorporateTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CorporateTraining.aspx.designer.cs">
+      <DependentUpon>CorporateTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses%40gktcs.aspx.cs">
+      <DependentUpon>Courses%40gktcs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses%40gktcs.aspx.designer.cs">
+      <DependentUpon>Courses%40gktcs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Android.aspx.cs">
+      <DependentUpon>Android.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Android.aspx.designer.cs">
+      <DependentUpon>Android.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\CCNA.aspx.cs">
+      <DependentUpon>CCNA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\CCNA.aspx.designer.cs">
+      <DependentUpon>CCNA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\C++.aspx.cs">
+      <DependentUpon>C++.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\C++.aspx.designer.cs">
+      <DependentUpon>C++.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\C Sharp.aspx.cs">
+      <DependentUpon>C Sharp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\C Sharp.aspx.designer.cs">
+      <DependentUpon>C Sharp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\PHP.aspx.cs">
+      <DependentUpon>PHP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\PHP.aspx.designer.cs">
+      <DependentUpon>PHP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\ITIL V3.aspx.cs">
+      <DependentUpon>ITIL V3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\ITIL V3.aspx.designer.cs">
+      <DependentUpon>ITIL V3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\CA Siteminder.aspx.cs">
+      <DependentUpon>CA Siteminder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\CA Siteminder.aspx.designer.cs">
+      <DependentUpon>CA Siteminder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\PMP.aspx.cs">
+      <DependentUpon>PMP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\PMP.aspx.designer.cs">
+      <DependentUpon>PMP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\RHEL.aspx.cs">
+      <DependentUpon>RHEL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\RHEL.aspx.designer.cs">
+      <DependentUpon>RHEL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\MCSE.aspx.cs">
+      <DependentUpon>MCSE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\MCSE.aspx.designer.cs">
+      <DependentUpon>MCSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\CA Autosys.aspx.cs">
+      <DependentUpon>CA Autosys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\CA Autosys.aspx.designer.cs">
+      <DependentUpon>CA Autosys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Spring.aspx.cs">
+      <DependentUpon>Spring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Spring.aspx.designer.cs">
+      <DependentUpon>Spring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Struts.aspx.cs">
+      <DependentUpon>Struts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Struts.aspx.designer.cs">
+      <DependentUpon>Struts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\PhoneGap.aspx.cs">
+      <DependentUpon>PhoneGap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\PhoneGap.aspx.designer.cs">
+      <DependentUpon>PhoneGap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Jquery Mobile.aspx.cs">
+      <DependentUpon>Jquery Mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Jquery Mobile.aspx.designer.cs">
+      <DependentUpon>Jquery Mobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\QTP.aspx.cs">
+      <DependentUpon>QTP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\QTP.aspx.designer.cs">
+      <DependentUpon>QTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\HTML.aspx.cs">
+      <DependentUpon>HTML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\HTML.aspx.designer.cs">
+      <DependentUpon>HTML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\MySql.aspx.cs">
+      <DependentUpon>MySql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\MySql.aspx.designer.cs">
+      <DependentUpon>MySql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Sqlite.aspx.cs">
+      <DependentUpon>Sqlite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Sqlite.aspx.designer.cs">
+      <DependentUpon>Sqlite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Perl.aspx.cs">
+      <DependentUpon>Perl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Perl.aspx.designer.cs">
+      <DependentUpon>Perl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Unix.aspx.cs">
+      <DependentUpon>Unix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Unix.aspx.designer.cs">
+      <DependentUpon>Unix.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Linux.aspx.cs">
+      <DependentUpon>Linux.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Linux.aspx.designer.cs">
+      <DependentUpon>Linux.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\CSS.aspx.cs">
+      <DependentUpon>CSS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\CSS.aspx.designer.cs">
+      <DependentUpon>CSS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Django.aspx.cs">
+      <DependentUpon>Django.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Django.aspx.designer.cs">
+      <DependentUpon>Django.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Jython.aspx.cs">
+      <DependentUpon>Jython.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Jython.aspx.designer.cs">
+      <DependentUpon>Jython.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\CSS4.aspx.cs">
+      <DependentUpon>CSS4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\CSS4.aspx.designer.cs">
+      <DependentUpon>CSS4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Ajax.aspx.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Ajax.aspx.designer.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\JavaScript.aspx.cs">
+      <DependentUpon>JavaScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\JavaScript.aspx.designer.cs">
+      <DependentUpon>JavaScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\C.aspx.cs">
+      <DependentUpon>C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\C.aspx.designer.cs">
+      <DependentUpon>C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\DotNet.aspx.cs">
+      <DependentUpon>DotNet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\DotNet.aspx.designer.cs">
+      <DependentUpon>DotNet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Hibernate.aspx.cs">
+      <DependentUpon>Hibernate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Hibernate.aspx.designer.cs">
+      <DependentUpon>Hibernate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Html5.aspx.cs">
+      <DependentUpon>Html5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Html5.aspx.designer.cs">
+      <DependentUpon>Html5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\J2EE.aspx.cs">
+      <DependentUpon>J2EE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\J2EE.aspx.designer.cs">
+      <DependentUpon>J2EE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Java.aspx.cs">
+      <DependentUpon>Java.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Java.aspx.designer.cs">
+      <DependentUpon>Java.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Jquery.aspx.cs">
+      <DependentUpon>Jquery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Jquery.aspx.designer.cs">
+      <DependentUpon>Jquery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\plsql.aspx.cs">
+      <DependentUpon>plsql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\plsql.aspx.designer.cs">
+      <DependentUpon>plsql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\Python.aspx.cs">
+      <DependentUpon>Python.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\Python.aspx.designer.cs">
+      <DependentUpon>Python.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\SQL.aspx.cs">
+      <DependentUpon>SQL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses\SQL.aspx.designer.cs">
+      <DependentUpon>SQL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentOpenings.aspx.cs">
+      <DependentUpon>CurrentOpenings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CurrentOpenings.aspx.designer.cs">
+      <DependentUpon>CurrentOpenings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstitutionalTraining.aspx.cs">
+      <DependentUpon>InstitutionalTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstitutionalTraining.aspx.designer.cs">
+      <DependentUpon>InstitutionalTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementDesk.aspx.cs">
+      <DependentUpon>ManagementDesk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementDesk.aspx.designer.cs">
+      <DependentUpon>ManagementDesk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedMasterPage1.master.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedMasterPage1.master.designer.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+    </Compile>
+    <Compile Include="OurMilestones.aspx.cs">
+      <DependentUpon>OurMilestones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OurMilestones.aspx.designer.cs">
+      <DependentUpon>OurMilestones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OurValues.aspx.cs">
+      <DependentUpon>OurValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OurValues.aspx.designer.cs">
+      <DependentUpon>OurValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Placements.aspx.cs">
+      <DependentUpon>Placements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Placements.aspx.designer.cs">
+      <DependentUpon>Placements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects.aspx.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects.aspx.designer.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RetailTraining.aspx.cs">
+      <DependentUpon>RetailTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RetailTraining.aspx.designer.cs">
+      <DependentUpon>RetailTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Online Training.aspx.cs">
+      <DependentUpon>Online Training.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Online Training.aspx.designer.cs">
+      <DependentUpon>Online Training.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEnquiry.aspx.cs">
+      <DependentUpon>StudentEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEnquiry.aspx.designer.cs">
+      <DependentUpon>StudentEnquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainerRegistration.aspx.cs">
+      <DependentUpon>TrainerRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainerRegistration.aspx.designer.cs">
+      <DependentUpon>TrainerRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisionMission.aspx.cs">
+      <DependentUpon>VisionMission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisionMission.aspx.designer.cs">
+      <DependentUpon>VisionMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WhoWeAre.aspx.cs">
+      <DependentUpon>WhoWeAre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WhoWeAre.aspx.designer.cs">
+      <DependentUpon>WhoWeAre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FirstSeen.Master.cs">
+      <DependentUpon>FirstSeen.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstSeen.Master.designer.cs">
+      <DependentUpon>FirstSeen.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShops.aspx.cs">
+      <DependentUpon>WorkShops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkShops.aspx.designer.cs">
+      <DependentUpon>WorkShops.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="About us\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FirstSeen.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Skin1\Skin1.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="least\.DS_Store" />
+    <None Include="least\css\.DS_Store" />
+    <None Include="least\css\least.scss" />
+    <None Include="least\img\.DS_Store" />
+    <None Include="least\img\effects\.DS_Store" />
+    <None Include="least\js\.DS_Store" />
+    <Content Include="NestedMasterPage1.master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52047</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,257 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FirstSeen.master.cs"
+    Inherits="GKTCS_Official.FirstSeen" %>
+
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" href="Styles/menu.css" rel="stylesheet" />
+    <link href="Styles/footerstyle.css" rel="stylesheet" type="text/css" />
+    <!--<script src="Scripts/jquery.js" type="text/javascript"></script>-->
+    <script src="menu.js" type="text/javascript"></script>
+    <style type="text/css">
+        
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type='text/javascript'>
+
+        var $j = jQuery.noConflict();  
+  
+    </script>
+    <script type="text/javascript">
+
+        $j(document).ready(function () {
+            $j('a.login-window').click(function () {
+
+                var loginBox = $j(this).attr('href');
+
+                $j(loginBox).fadeIn(300);
+
+                var popMargTop = ($j(loginBox).height() + 24) / 2;
+                var popMargLeft = ($j(loginBox).width() + 24) / 2;
+
+                $j(loginBox).css({
+                    'margin-top': -popMargTop,
+                    'margin-left': -popMargLeft
+                });
+
+                $j('body').append('<div id="mask"></div>');
+                $j('#mask').fadeIn(300);
+
+                return false;
+            });
+
+            $j('a.close, #mask').live('click', function () {
+                $j('#mask , .login-popup').fadeOut(300, function () {
+                    $j('#mask').remove();
+                });
+                return false;
+            });
+        });
+    </script>
+</head>
+<body id="page1">
+    <form id="form1" runat="server">
+    <div id="main">
+        <div id="header">
+            <div class="row-1">
+                <div class="fleft">
+                    <marquee><img src="../images/Coursessmall.png" height="50px" /><img src="../images/.net.png" height="38px" /></marquee>
+                </div>
+                <div class="fright">
+                    <a href="#login-box" class="login-window" style="font-size: medium">Sign Up / Sign In</a>
+                </div>
+                <div id="login-box" class="login-popup">
+                    <a href="#" class="close">
+                        <img src="../images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+                    <form method="post" action="#">
+                    <asp:Label ID="Label1" runat="server" Text="Email" ForeColor="#CCCCCC" Font-Bold="True"
+                        Font-Names="Tahoma" Width="70px"></asp:Label>
+                    <asp:TextBox ID="TextBox1" CssClass="txtbx" runat="server" TextMode="SingleLine"></asp:TextBox>
+                    <br />
+                    <br />
+                    <asp:Label ID="Label2" runat="server" Text="Password" ForeColor="#CCCCCC" Font-Bold="True"
+                        Font-Names="Tahoma" Width="70px"></asp:Label>
+                    <asp:TextBox ID="TextBox2" CssClass="txtbx" runat="server" TextMode="Password"></asp:TextBox>
+                    <br />
+                    <br />
+                    <asp:Button ID="Button1" CssClass="btn-sign" runat="server" Text="Sign in" />
+                    <p>
+                        <a class="forgot" href="#">Forgot your password?</a>
+                    </p>
+                    <p>
+                        <a class="forgot" href="#">Not register yet? Register here</a>
+                    </p>
+                    </form>
+                </div>
+            </div>
+            <div id="menu">
+                <ul class="menu">
+                    <li><a href="../Index.aspx" class="parent"><span>Home</span></a></li>
+                    <li><a href="../AboutUs.aspx" class="parent"><span>About Us</span></a>
+                        <ul>
+                            <li><a href="../WhoWeAre.aspx"><span>Who we are?</span></a></li>
+                            <li><a href="../WhoWeAre.aspx"><span>What we do?</span></a></li>
+                            <li><a href="../VisionMission.aspx"><span>Our Mission</span></a></li>
+                            <li><a href="../OurMilestones.aspx"><span>Our Milestones</span></a></li>
+                            <li><a href="../OurValues.aspx"><span>Our Values</span></a></li>
+                            <li><a href="../wfrmHome.aspx">Director Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="parent"><span>Courses</span></a>
+                        <ul>
+                            <li><a href="#" class="parent"><span>Development</span></a>
+                                <ul>
+                                    <li><a href="../Courses/C.aspx"><span>C & C++</span></a></li>
+                                    <li><a href="../Courses/C Sharp.aspx"><span>C#</span></a></li>
+                                    <li><a href="../Courses/Java.aspx"><span>Core Java</span></a></li>
+                                    <li><a href="../Courses/J2EE.aspx"><span>J2EE</span></a></li>
+                                    <li><a href="../Courses/Struts.aspx"><span>Struts</span></a></li>
+                                    <li><a href="../Courses/Spring.aspx"><span>Spring</span></a></li>
+                                    <li><a href="../Courses/Hibernate.aspx"><span>Hibernate</span></a></li>
+                                    <li><a href="../Courses/DotNet.aspx"><span>ASP.Net</span></a></li>
+                                    <li><a href="../Courses/Python.aspx"><span>Python</span></a></li>
+                                    <li><a href="../Courses/Django.aspx"><span>Django</span></a></li>
+                                    <li><a href="#"><span>Jython</span></a></li>
+                                    <li><a href="#"><span>Perl</span></a></li>
+                                    <li><a href="../Courses/PHP.aspx"><span>PHP</span></a></li>
+                                    <li><a href="../Courses/Linux.aspx"><span>Linux</span></a></li>
+                                    <li><a href="../Courses/Unix.aspx"><span>Unix</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="parent"><span>Web Technologies</span></a>
+                                <ul>
+                                    <li><a href="../Courses/HTML5.aspx"><span>HTML5</span></a></li>
+                                    <li><a href="../Courses/CSS4.aspx"><span>CSS4</span></a></li>
+                                    <li><a href="#"><span>JavaScript</span></a></li>
+                                    <li><a href="../Courses/Jquery.aspx"><span>Jquery</span></a></li>
+                                    <li><a href="../Courses/Ajax.aspx"><span>Ajax</span></a></li>
+                                    <li><a href="../Courses/CSS.aspx"><span>CSS</span></a></li>
+                                    <li><a href="../Courses/HTML.aspx"><span>HTML</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="parent"><span>Networking</span></a>
+                                <ul>
+                                    <li><a href="../Courses/CCNA.aspx"><span>CCNA</span></a></li>
+                                    <li><a href="../Courses/RHEL.aspx"><span>RHEL</span></a></li>
+                                    <li><a href="../wfrmDemo.aspx"><span>RHCE</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="parent"><span>Database</span></a>
+                                <ul>
+                                    <li><a href="../Courses/SQL.aspx"><span>SQL</span></a></li>
+                                    <li><a href="#"><span>Sqlite</span></a></li>
+                                    <li><a href="#"><span>DBA</span></a></li>
+                                    <li><a href="#"><span>MySql</span></a></li>
+                                    <li><a href="#"><span>Oracle</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="parent"><span>Mobile Development </span></a>
+                                <ul>
+                                    <li><a href="../Courses/Android.aspx"><span>Android</span></a></li>
+                                    <li><a href="#"><span>FrameWorks</span></a></li>
+                                    <li><a href="#"><span>PhoneGap</span></a></li>
+                                    <li><a href="#"><span>Jquery Mobile</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="parent"><span>Security Management</span></a>
+                                <ul>
+                                    <li><a href="../Courses/CA Siteminder.aspx"><span>CA SITEMINDER</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="parent"><span>IT Infrastructure</span></a>
+                                <ul>
+                                    <li><a href="#"><span>CA AUTOSYS</span></a></li>
+                                    <li><a href="../Courses/ITIL V3.aspx"><span>ITIL V3</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="parent"><span>Testing</span></a>
+                                <ul>
+                                    <li><a href="#"><span>QTP</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="parent"><span>Training</span></a>
+                        <ul>
+                            <li><a href="../CorporateTraining.aspx"><span>Corporate Training</span></a></li>
+                            <li><a href="../RetailTraining.aspx"><span>Retail Training</span></a></li>
+                            <li><a href="../InstitutionalTraining.aspx"><span>Institutional Training</span></a></li>
+                            <li><a href="../Online Training.aspx"><span>Online Training</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="parent"><span>Consultancy</span></a>
+                        <ul>
+                            <li><a href="../wfrmFresher.aspx"><span>Freshers</span></a></li>
+                            <li><a href="#"><span>Experienced</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="parent"><span>Enquiry</span></a>
+                        <ul>
+                            <li><a href="../wfrmStudentEnquiry.aspx"><span>Student Enquiry</span></a></li>
+                            <li><a href="../CoporateEnquiry.aspx"><span>Corporate Training</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Projects.aspx"><span>Projects</span></a></li>
+                    <li><a href="../Career.aspx" class="parent"><span>Career</span></a>
+                        <ul>
+                            <li><a href="../Career.aspx"><span>Current Openings</span></a></li>
+                            <li><a href="../TrainerRegistration.aspx"><span>Trainer Registration</span></a></li>
+                            <li><a href="../wfrmIndex.aspx"><span>Checking</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="last"><a href="../ContactUs.aspx"><span>Contact Us</span></a></li>
+                </ul>
+            </div>
+            <div class="row-3">
+                <div class="">
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com
+
+   /pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="850px" height="300px" id="movie">
+                        <param name="movie" value="banner1.swf" />
+                        <embed src="../images/flashes/banner1.swf" quality="high" width="850px" height="216px"
+                            name="movie" align="" type="application/x-shockwave-flash" plug inspage="http://www.macromedia.com/go/getflashplayer" />
+                    </object>
+                </div>
+            </div>
+            <%--<div class="extra" style="border-color: #FFFFFF"><img src="../images/newGKTCS.png" alt="" /></div>--%>
+            <div class="extra" style="border-color: #FFFFFF">
+                <img src="../newGKTCS - Copy.jpg" style=" height:200px; width:200px;" alt="" /></div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div id="stickey_footer">
+            <ul id="footer_menu">
+                <li class="imgmenu"><a href="../Index.aspx"><span>Home></a></li>
+                <li><a href="../Projects.aspx">Projects</a>
+                    <li><a href="../Career.aspx">Career</a>
+                        <li><a href="../Placements.aspx">Placements</a>
+                            <li><a href="#">Blog</a>
+                                <li><a href="#">Testimonials</a>
+                                    <li><a href="#">FAQs</a>
+                                        <li><a href="../ContactUs.aspx">Contact</a>
+            </ul>
+            <ul id="social_icons">
+                <li><a href="https://twitter.com/surendrarp">
+                    <img src='../images/footerimages/twitter.png' alt="" /><span>Twitter</span></a></li>
+                <li><a href="http://www.linkedin.com/company/gktcs-india">
+                    <img src='../images/footerimages/Linkedin_logo.jpg' alt="" /><span>Linkedin</span></a></li>
+                <li><a href="https://www.facebook.com/gktcs.innovations">
+                    <img src='../images/footerimages/facebook.png' alt="" /><span>Facebook</span></a></li>
+            </ul>
+        </div>
+    </div>
+    </form>
+    <p>
+    </p>
+    <div style="visibility: hidden">
+        <br />
+        <a href="http://apycom.com/">Apycom jQuery Menus</a><br />
+    </div>
+</body>
+</html>

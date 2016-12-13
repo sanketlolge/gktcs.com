@@ -1,0 +1,20 @@
+c:\users\swapnil\documents\visual studio 2010\Projects\GKTCS Official\GKTCS Official\bin\GKTCS Official.dll
+c:\users\swapnil\documents\visual studio 2010\Projects\GKTCS Official\GKTCS Official\bin\GKTCS Official.pdb
+c:\users\swapnil\documents\visual studio 2010\Projects\GKTCS Official\GKTCS Official\obj\Debug\ResolveAssemblyReference.cache
+c:\users\swapnil\documents\visual studio 2010\Projects\GKTCS Official\GKTCS Official\obj\Debug\GKTCS Official.dll
+c:\users\swapnil\documents\visual studio 2010\Projects\GKTCS Official\GKTCS Official\obj\Debug\GKTCS Official.pdb
+C:\Users\surendra\Desktop\setupfile\gktcs2013web\GKTCS Official\GKTCS Official\bin\GKTCS Official.dll
+C:\Users\surendra\Desktop\setupfile\gktcs2013web\GKTCS Official\GKTCS Official\bin\GKTCS Official.pdb
+C:\Users\surendra\Desktop\setupfile\gktcs2013web\GKTCS Official\GKTCS Official\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\surendra\Desktop\setupfile\gktcs2013web\GKTCS Official\GKTCS Official\obj\Debug\GKTCS Official.dll
+C:\Users\surendra\Desktop\setupfile\gktcs2013web\GKTCS Official\GKTCS Official\obj\Debug\GKTCS Official.pdb
+I:\website_backup\20 july update with gallery\gktcs2013web\GKTCS Official\GKTCS Official\bin\GKTCS Official.dll
+I:\website_backup\20 july update with gallery\gktcs2013web\GKTCS Official\GKTCS Official\bin\GKTCS Official.pdb
+I:\website_backup\20 july update with gallery\gktcs2013web\GKTCS Official\GKTCS Official\obj\Debug\ResolveAssemblyReference.cache
+I:\website_backup\20 july update with gallery\gktcs2013web\GKTCS Official\GKTCS Official\obj\Debug\GKTCS Official.dll
+I:\website_backup\20 july update with gallery\gktcs2013web\GKTCS Official\GKTCS Official\obj\Debug\GKTCS Official.pdb
+I:\website_backup\20 july update with gallery\22 july with placement\GKTCS Official\GKTCS Official\bin\GKTCS Official.dll
+I:\website_backup\20 july update with gallery\22 july with placement\GKTCS Official\GKTCS Official\bin\GKTCS Official.pdb
+I:\website_backup\20 july update with gallery\22 july with placement\GKTCS Official\GKTCS Official\obj\Debug\ResolveAssemblyReference.cache
+I:\website_backup\20 july update with gallery\22 july with placement\GKTCS Official\GKTCS Official\obj\Debug\GKTCS Official.dll
+I:\website_backup\20 july update with gallery\22 july with placement\GKTCS Official\GKTCS Official\obj\Debug\GKTCS Official.pdb

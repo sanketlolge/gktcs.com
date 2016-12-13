@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DirectorDetails.master.cs"
+    Inherits="Master_Pages_DirectorDetails" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <title>Welcome to GKTCS Details</title>
+    <meta name="description" content="Description of your site goes here">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <%--<link href="css/style.css" rel="stylesheet" type="text/css">--%>
+    <style type="text/css">
+        .style1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight: normal;
+            color: #0066FF;
+            margin-bottom: 20px;
+        }
+        .style2
+        {
+            color: #0066FF;
+        }
+        .style3
+        {
+            width: 133px;
+            height: 115px;
+        }
+        .style4
+        {
+            color: #0066FF;
+            font-size: medium;
+        }
+    </style>
+    <%--<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="main-out">
+        <div class="main">
+            <div class="page">
+                <div class="top">
+                    <div class="header">
+                        <div class="header-top">
+                            <h1 class="style2">
+                                Gktcs Innovation Pvt. Ltd.</h1>
+                            <p>
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="../Index.aspx">Go back to www.gktcs.com</asp:HyperLink></p>
+                        </div>
+                        <div class="topmenu">
+                            <ul>
+                                <li><a href="wfrmHome.aspx">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="wfrmTraining.aspx">Training</a></li>
+                                <li><a href="wfrmCalendar.aspx">Calendar</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Photos</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-img">
+                            <h2>
+                                &quot;Think Beyond Success&quot;</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <asp:ContentPlaceHolder ID="Body" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

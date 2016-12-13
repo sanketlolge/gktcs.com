@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/FirstSeen.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage1.master.cs" Inherits="GKTCS_Official.NestedMasterPage1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="Styles/sidecon.css" rel="stylesheet" type="text/css" media="screen" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="content">
+<div class="indent">
+<br />
+<div class="col-tab">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+   
+    </asp:ContentPlaceHolder>
+    </div>
+    <div class="col-2">
+          <div class="box2">   
+               <div class="inner">
+                    <p>
+                        <asp:Label ID="Label1" runat="server" Text="Navigation" Font-Bold="True" 
+                            Font-Names="Tahoma" Font-Size="medium" ForeColor="White"></asp:Label></p></div>
+                    <div class="innerinner">
+                    <ul class="left_menu">
+        <li class="odd"><a href="~/WorkShops.aspx">Workshops</a></li>
+        <li class="even"><a href="~/Achievement.aspx">Achievements</a></li>
+        <li class="odd"><a href="#">Infrastructure</a></li>
+        <li class="even"><a href="#">Success Stories</a></li>
+        <li class="odd"><a href="../least/gallery.html">Gallery</a></li>
+        <li class="even"><a href="">Life@GKTCS</a></li>
+        
+      </ul>
+         </div>
+         </div>
+          
+ <div class="innerenq">
+         <ul class="sidenav">
+	<li class="hd">
+		Have Query?
+		<span>Name: </span>
+        <span><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></span>
+        <span>Email: </span>
+        <span><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></span>
+        <span>Mobile No.: </span>
+        <span><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></span>
+        <span>About: </span>
+        <span>
+            <asp:TextBox ID="TextBox4" runat="server" TextMode="MultiLine"></asp:TextBox></span>
+        <span><asp:Button ID="Button1" runat="server" Text="Submit" Width="120px" 
+            Font-Bold="True" Font-Size="Small"/></span>
+        
+	</li></ul>
+       </div>
+       </div>
+       </div>
+       </div>
+       
+</asp:Content>

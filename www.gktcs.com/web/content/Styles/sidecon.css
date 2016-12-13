@@ -1,0 +1,177 @@
+﻿
+/*.......SPY Roller.............*/
+
+input, textarea { font-family: Arial; font-size: 125%; padding: 7px; }
+label { display: block; } 
+p { margin: 0; margin-bottom: 4px;}
+h5 { margin: 0; font-weight: normal; }
+a:link,
+a:hover,
+a:visited {
+    color: #00c6ff;
+}
+#sidebar
+{
+	color: #AFB0B1;
+	
+	float: left;
+	margin: 0 0 5px;
+	padding: 10px 10px 10px 15px ;
+	width: 220px;
+	height:265px;
+	font-family: Tahoma;
+}
+
+#sidebar ul {
+    font-size:1.2em;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+
+.rating {
+    background-image:url(images/info_bar_stars.png);
+    background-repeat:no-repeat;
+    height:12px;
+    text-indent:-900em;
+    font-size:1em;
+    margin:0 0 9px;
+}
+
+.none {
+        background-position: 82px 0px;
+}
+
+.four {
+        background-position: 82px -48px;
+}
+
+.five {
+        background-position: 82px -60px;
+}
+
+.tags {
+        color: #fff;
+        margin: 0.5em;
+}
+
+.tags a,
+.tags span {
+        background-color: #333839;
+        font-size: 0.8em;
+        padding: 0.1em 0.8em 0.2em;
+}
+
+.tags a:link,
+.tags a:visited {
+        color: #fff;
+        text-decoration: none;  
+}
+
+.tags a:hover,
+.tags a:active {
+        background-color: #3e4448;
+        color: #fff;
+        text-decoration: none;  
+}
+
+#sidebar li {
+    height: 90px;
+    overflow: hidden;
+}
+
+#sidebar li h5
+{
+	color: #000000;
+	font-size: small;
+	margin-bottom: 0.5em;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#sidebar li h5 a {
+    color:#000000;
+    text-decoration:none;
+}
+
+#sidebar li img {
+    float:left;
+    margin-right:8px;
+}
+
+#sidebar li .info
+{
+	color: #3E4548;
+	font-size: small;
+	font-family: Tahoma;
+	
+}
+
+#sidebar .info a,
+#sidebar .info a:visited {
+    color:#3E4548;
+    text-decoration: none;
+}
+
+#sidebar .spyWrapper {
+    height: 100%;
+    overflow: hidden;
+    position: relative;    
+}
+
+#sidebar {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+}
+
+.tags span,
+.tags a {
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+}
+
+a img {
+    border: 0;
+}
+
+/*.....................*/
+a{ color:#FFCC00;}
+a:focus {
+	outline: none;
+}
+ul.sidenav
+{
+	font-size: 1.2em;
+	float: right;
+	
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+	list-style: none;
+	background: #138CAB;
+}
+ul.sidenav li.hd
+{
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	width: 155px;
+	padding: 10px 10px 10px 35px;
+	background: url(../images/sidenav_.gif) no-repeat 5px 12px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	font-weight: bold;
+}
+ul.sidenav li.hd:hover
+{
+	background: #66CCFF url(images/sidenav_.gif) no-repeat 5px 7px;
+	border-top: 1px solid #1a4c76;
+}
+ul.sidenav li.hd span{	display: none; }
+ul.sidenav li.hd:hover span {
+	display: block;
+	font-size: 0.8em;
+	padding: 2px 0;
+}
+/*.............*/

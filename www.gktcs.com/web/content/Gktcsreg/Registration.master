@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Registration.master.cs" Inherits="Registration" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 82%;
+        }
+        .style2
+        {
+            width: 146px;
+        }
+        .style3
+        {
+            width: 139px;
+            height: 128px;
+        }
+        .style4
+        {
+            text-align: center;
+        }
+        .style6
+        {
+            height: 99px;
+        }
+        .style7
+        {
+            width: 835px;
+            height: 223px;
+            margin-right: 63px;
+        }
+        .style8
+        {
+            width: 146px;
+            height: 26px;
+        }
+        .style9
+        {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style2">
+                <img alt="logo" class="style3" src="img/logo.png" /></td>
+            <td>
+                <img alt="banner" class="style7" src="img/sir5.jpg" /></td>
+        </tr>
+        <tr>
+            <td class="style8">
+                </td>
+            <td class="style9">
+                <asp:Menu ID="Menu1" runat="server" BackColor="#3399FF" 
+                    DynamicHorizontalOffset="2" DynamicTopSeparatorImageUrl="~/img/download.jpg" 
+                    Font-Bold="True" Font-Names="Verdana" Font-Size="0.9em" ForeColor="White" 
+                    Orientation="Horizontal">
+                    <DynamicHoverStyle BackColor="#346767" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#408080" />
+                    <DynamicSelectedStyle BackColor="Teal" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" 
+                            NavigateUrl="http://www.gktcs.com/Index.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" Value="About">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Training_Conducted.aspx" 
+                            Text=" Training Conducted" Value=" Training Conducted"></asp:MenuItem>
+                        <asp:MenuItem Text="Calendar" Value="Calendar"></asp:MenuItem>
+                        <asp:MenuItem Text="Testimonials" Value="Testimonials"></asp:MenuItem>
+                        <asp:MenuItem Text="Videos" Value="Videos"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Pictures.aspx" Text="Photos" Value="Photos">
+                        </asp:MenuItem>
+                        <asp:MenuItem></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="Blue" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" ItemSpacing="10px" 
+                        VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="Teal" ItemSpacing="10px" />
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="style6">
+    <div>
+        <asp:ContentPlaceHolder  id="ContentPlaceHolder1" runat="server">
+        
+            <p style="height: 31px; width: 809px">
+                <br />
+            </p>
+            <p style="width: 721px">
+            </p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="style4" colspan="2">
+                <br />
+                <br />
+                <br />
+                <br />
+                Copyright@gktcs.com</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
